@@ -105,10 +105,10 @@ console.log(`Totale carrello: ` + totale + `€ - Spedizione: ` + spedizione + `
 /* SCRIVI QUI LA TUA RISPOSTA */
 const array = [42, 'ciao', true];
 for (let i = 0; i < array.length; i++) {
-   if (typeof array[i] === "number") {
-      console.log(`La posizione ` + i + ` è un numero`);
+   if (typeof(array[i]) === 'number') {
+      console.log(array[i] + ` è un numero`);
    } else {
-      console.log(`La posizione ` + i + ` non è un numero`);
+      console.log(array[i] + ` non è un numero`);
    }
 }
 
@@ -145,9 +145,10 @@ console.log(array3);
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 const prodotti = ['Penna', 'Quaderno', 'Zaino'];
-if (prodotti.includes('Zaino') === true) {
+let cercato = 'Zaino'
+if (prodotti.includes(cercato) === true) {
    console.log(`Zaino è in carrello: true`);
-   console.log(`La posizione di Zaino nell'array è: ` + prodotti.indexOf('Zaino'));
+   console.log(`La posizione di Zaino nell'array è: ` + prodotti.indexOf(cercato));
 } else {
    console.log(`Non in carrello`);
 }
