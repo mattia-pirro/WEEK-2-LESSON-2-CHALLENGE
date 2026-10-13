@@ -39,7 +39,7 @@ console.log(persona);
 const utente = {
    via: 'Via Volta',
    citta: 'Milano',
-   cap: 20017,
+   cap: '20017',
 }
 console.log(utente.cap);
 
@@ -64,11 +64,11 @@ let c;
 a = 10;
 b = 15;
 c = 5;
-if(a > b && a > c){
+if (a > b && a > c) {
    console.log(`Il numero maggiore è a: ` + a);
-} else if (b > a && b > c){
+} else if (b > a && b > c) {
    console.log(`Il numero maggiore è b: ` + b);
-} else if (a === b || b === c || c === a){
+} else if (a === b || b === c || c === a) {
    console.log(`Pareggio`);
 } else {
    console.log(`Il numero maggiore è c: ` + c);
@@ -85,17 +85,17 @@ if(a > b && a > c){
 let totale;
 let spedizione;
 totale = 30;
-if (totale >= 50){
+if (totale >= 50) {
    spedizione = 0;
 } else {
    spedizione = 9.90;
 }
-console.log(`Totale carrello: ` + totale + `€ - Spedizione: ` + spedizione + `€ - Totale finale: ` + (totale+spedizione)+ `€`);
+console.log(`Totale carrello: ` + totale + `€ - Spedizione: ` + spedizione + `€ - Totale finale: ` + (totale + spedizione) + `€`);
 
 spedizione = totale >= 50
    ? 0
    : 9.90
-console.log(`Totale carrello: ` + totale + `€ - Spedizione: ` + spedizione + `€ (gratuita) - Totale finale: ` + (totale+spedizione) + `€`);
+console.log(`Totale carrello: ` + totale + `€ - Spedizione: ` + spedizione + `€ (gratuita) - Totale finale: ` + (totale + spedizione) + `€`);
 
 /* ESERCIZIO 7 — typeof check
    Crea un array con 3 valori diversi (es. [42, 'ciao', true]).
@@ -104,8 +104,8 @@ console.log(`Totale carrello: ` + totale + `€ - Spedizione: ` + spedizione + `
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 const array = [42, 'ciao', true];
-for (let i = 0; i < array.length; i++){
-   if(typeof array[i] === "number"){
+for (let i = 0; i < array.length; i++) {
+   if (typeof array[i] === "number") {
       console.log(`La posizione ` + i + ` è un numero`);
    } else {
       console.log(`La posizione ` + i + ` non è un numero`);
@@ -118,7 +118,7 @@ for (let i = 0; i < array.length; i++){
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-const array2 =[];
+const array2 = [];
 array2.push(1, 2, 3, 4, 5);
 array2.unshift(0);
 console.log(array2 + ` - la lunghezza dell'array è: ` + array2.length);
@@ -133,7 +133,7 @@ console.log(array2 + ` - la lunghezza dell'array è: ` + array2.length);
 const array3 = ['Penna', 'Quaderno', 'Zaino', 'Astuccio'];
 array3.splice(1, 1);
 console.log(array3);
-array3.splice(1, 0 , 'Diario');
+array3.splice(1, 0, 'Diario');
 console.log(array3);
 
 /* ESERCIZIO 10 — Cerca un articolo
@@ -145,11 +145,11 @@ console.log(array3);
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 const prodotti = ['Penna', 'Quaderno', 'Zaino'];
-if (prodotti.includes('Zaino') === true){
+if (prodotti.includes('Zaino') === true) {
    console.log(`Zaino è in carrello: true`);
    console.log(`La posizione di Zaino nell'array è: ` + prodotti.indexOf('Zaino'));
 } else {
-      console.log(`Non in carrello`);
+   console.log(`Non in carrello`);
 }
 
 /* ESERCIZIO 11 — Lista utenti
@@ -173,7 +173,7 @@ const utenti = [
       eta: 19,
    }
 ]
-for (let i = 0; i < utenti.length; i++){
+for (let i = 0; i < utenti.length; i++) {
    console.log(`Utente: ${utenti[i].nome} (${utenti[i].eta} anni)`);
 }
 console.table(utenti);
@@ -209,10 +209,10 @@ const products = [
       disponibile: false,
    }
 ]
-for (let i = 0; i < products.length; i++){
-   if (products[i].disponibile === true && products[i].prezzo < 10){
+for (let i = 0; i < products.length; i++) {
+   if (products[i].disponibile === true && products[i].prezzo < 10) {
       console.log(`OFFERTA : ${products[i].nome} (${products[i].prezzo}€)`);
-   } else if (products[i].disponibile === true && products[i].prezzo >= 10){
+   } else if (products[i].disponibile === true && products[i].prezzo >= 10) {
       console.log(`${products[i].nome} - ${products[i].prezzo}€`);
    } else {
       console.log(`${products[i].nome} - esaurito`);
@@ -227,3 +227,10 @@ for (let i = 0; i < products.length; i++){
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+const numeri = [1, 2, 3, 4, 5];
+console.log(numeri);
+const inverso = [];
+for (let i = 4; i >= 0; i--) {
+   inverso.push(numeri[i]);
+}
+console.log(inverso);
