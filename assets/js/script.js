@@ -230,7 +230,7 @@ for (let i = 0; i < products.length; i++) {
 const numeri = [1, 2, 3, 4, 5];
 console.log(numeri);
 const inverso = [];
-for (let i = 4; i >= 0; i--) {
+for (let i = numeri.length - 1; i >= 0; i--) {
    inverso.push(numeri[i]);
 }
 console.log(inverso);
